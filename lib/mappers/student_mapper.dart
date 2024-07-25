@@ -1,0 +1,37 @@
+import 'package:tutorados_app/entities/entities.dart';
+
+class StudentMapper {
+  static Student studentJsonToEntity(Map<String, dynamic> json) => Student(
+      name: json['nombre'],
+      lastName: json['apellido'],
+      tutorId: json['tutor_id'],
+      studentEnrollment: json['alumno_id'],
+      userId: json['usuario_id'],
+      career: json['carrera'],
+      gender: json['genero'],
+      tutorOrParent: json['tutor_padre'],
+      birthdate: json['fechaNac'],
+      age: json['edad'],
+      placeOfBirth: json['lugarNac'],
+      religion: json['religion'],
+      activity: json['actividad'],
+      currentAddress: json['domicilio_actual'],
+      homeAddress: json['domicilio_familiar'],
+      cellPhoneNumber: json['celular'],
+      homePhoneNumber: json['tel_casa'],
+      email: json['correo'],
+      tutorsEmail: json['correo_tutor'],
+      socialSecurityNumber: json['num_seguro'],
+      bloodType: json['tipo_sangre'],
+      disease: json['enfermedad'],
+      disability: json['discapacidad'],
+      allergy: json['alergia'],
+      sustances: json['sustancias_toxicas'],
+      highSchool: json['preparatoria'],
+      average: (json['promedio'] ?? 0).toDouble(),
+      scoreCeneval: (json['puntuacion_ceneval'] ?? 0).toDouble(),
+      workplace: json['trabajo'],
+      economicalSupport: json['apoyo_economico'],
+      livesWith: json['convivencia'],
+      image: json['imagen']);
+}

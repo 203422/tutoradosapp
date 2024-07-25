@@ -1,0 +1,12 @@
+export 'package:tutorados_app/presentation/screens/auth/login_screen.dart';
+export 'package:tutorados_app/presentation/screens/auth/register_screen.dart';
+export 'student/home_student_screen.dart';
+export 'auth/check_auth_status_screen.dart';
+export 'student/form_screen.dart';
+export 'tutor/tutor_screen.dart';
+export 'tutor/tutored_screen.dart';
+export 'tutor/student_screen.dart';
+export 'admin/admin_screen.dart';
+export 'admin/tutors_screen.dart';
+export 'admin/register_tutor.dart';
+export 'student/profile_screen.dart';
